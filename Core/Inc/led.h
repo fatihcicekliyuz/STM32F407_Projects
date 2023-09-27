@@ -1,4 +1,4 @@
-/*led.c fonksiyonu çağrılır */
+/*led.c fonksiyonu çağrılır bu iki ayar dışında başka bir ayara gerek yok */
 /*main.c fonsiyonunda led.h çağrıldıktan sonra  while(1) in içinde Led_yak(void); çağrılır*/
 #include "stm32f4xx_hal.h"
 
