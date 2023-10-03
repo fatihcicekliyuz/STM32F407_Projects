@@ -1,7 +1,7 @@
 /* spi.c den fonksiyon çağrılır sonrasında main.c de spi.h tanımlanır*/
-/* Rcc den hse crystal&ceramic aktif edilik 168mhz hızında*/
-/*main.c de main voidin hemen altında SPI_Init(); çağrılır*/
-/*while(1) dögüsünde
+/* Rcc den hse crystal&ceramic aktif edilir clock ise  168mhz hızında ayarlanır*/
+/*main.c de while(1) döngüsünde SPI_Init(); çağrılır*/
+/*spi.c dosyasında
  * uint8_t sendData = 0xAB;
  * HAL_SPI_Transmit(&hspi1, &sendData, 1, HAL_MAX_DELAY);
  * komutları yazılarak işlem sonlanır ve lojij analizörden gözlem yapılır*/

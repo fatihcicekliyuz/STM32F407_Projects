@@ -17,7 +17,7 @@ int main(void)
 {
 
   HAL_Init();
-  SPI_Init();
+
   SystemClock_Config();
   MX_GPIO_Init();
   MX_USART2_UART_Init();
@@ -25,9 +25,7 @@ int main(void)
 
   while (1)
   {
-	    uint8_t sendData = 0xAB;
-
-	    HAL_SPI_Transmit(&hspi1, &sendData, 1, HAL_MAX_DELAY);
+	  SPI_Init();
   }
 
 }

@@ -16,4 +16,7 @@ void SPI_Init(void)
 	  hspi1.Init.CRCPolynomial = 10;
 
 	  HAL_SPI_Init(&hspi1);
+
+	  uint8_t sendData = 0x8B;
+      HAL_SPI_Transmit(&hspi1, &sendData, 1, HAL_MAX_DELAY);
 }
