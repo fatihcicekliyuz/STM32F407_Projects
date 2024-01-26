@@ -5,7 +5,7 @@ void SPI_Init(void)
 	  hspi1.Instance = SPI1;
 	  hspi1.Init.Mode = SPI_MODE_MASTER;
 	  hspi1.Init.Direction = SPI_DIRECTION_2LINES;
-	  hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
+	  hspi1.Init.DataSize = SPI_DATASIZE_16BIT;
 	  hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
 	  hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
 	  hspi1.Init.NSS = SPI_NSS_SOFT;
@@ -18,5 +18,5 @@ void SPI_Init(void)
 	  HAL_SPI_Init(&hspi1);
 
 	  uint8_t sendData = 0x8B;
-      HAL_SPI_Transmit(&hspi1, &sendData, 1, HAL_MAX_DELAY);
+      HAL_SPI_Transmit(&hspi1, &sendData, 2, HAL_MAX_DELAY);
 }

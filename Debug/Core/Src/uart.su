@@ -1,1 +1,2 @@
 ../Core/Src/uart.c:3:6:uartTransmit	16	static
+../Core/Src/uart.c:11:6:uartTransmit2	56	static

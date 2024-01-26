@@ -1,1 +1,2 @@
-uart.c:3:6:uartTransmit	5
+uart.c:3:6:uartTransmit	2
+uart.c:11:6:uartTransmit2	1

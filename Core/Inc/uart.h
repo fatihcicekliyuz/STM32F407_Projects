@@ -3,7 +3,11 @@
 #include "stm32f4xx_hal.h"
 #ifndef INC_UART_H_
 #define INC_UART_H_
+extern UART_HandleTypeDef huart5;
+
 void uartTransmit();
+void uartTransmit2();
+
 
 
 #endif
